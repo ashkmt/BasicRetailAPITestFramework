@@ -1,0 +1,227 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 19,
+        "name": "Searching Forecast.",
+        "description": "",
+        "id": "forecast-service-testing;searching-forecast.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "Search with parameters \"261720000\" \"10800\" \"I1\" \"\u003clocation\u003e\"",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user calls \"getFcstAPI\" with \"Post\" http request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "the API call get success with \"Status\" 200",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "\"Forecast\" Data returned",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "item",
+                  "loc",
+                  "date",
+                  "quantity"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Searching Supply",
+        "description": "",
+        "id": "forecast-service-testing;searching-supply;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "Search with \"261720000\" \"10800\" \"I1\" \"L1\"",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "user calls \"GetSupplyAPI\" with \"Post\" http request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "the API call get success with StatusCode 200",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "the \"Supply\" Data returned",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "item",
+                  "loc",
+                  "date",
+                  "quantity"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 31
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Forecast Service testing",
+    "description": "",
+    "id": "forecast-service-testing",
+    "keyword": "Feature",
+    "uri": "PA_API_Test.feature"
+  }
+]

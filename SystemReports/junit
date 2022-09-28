@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0">
+    <testcase classname="Forecast FE operations testing." name="Verify Add operation on ForecastFE page." time="0">
+        <skipped><![CDATA[Given Forecast data to Add..................................................undefined
+When user calls "AddFcstAPI"................................................undefined
+Then the API call get success with "Status" 200.............................undefined
+When Search with parameters "261720000" "10800" "I1" "<location>"...........undefined
+And user calls "GetFcstAPI".................................................undefined
+Then Forecast Data returned.................................................undefined
+]]></skipped>
+    </testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="2" time="0">
+    <testcase classname="Forecast Service testing" name="Searching Forecast." time="0">
+        <skipped><![CDATA[Given Search with parameters "261720000" "10800" "I1" "<location>"..........undefined
+When user calls "getFcstAPI" with "Post" http request.......................undefined
+Then the API call get success with "Status" 200.............................undefined
+And "Forecast" Data returned................................................undefined
+]]></skipped>
+    </testcase>
+    <testcase classname="Forecast Service testing" name="Searching Supply" time="0">
+        <skipped><![CDATA[Given Search with "261720000" "10800" "I1" "L1".............................undefined
+When user calls "GetSupplyAPI" with "Post" http request.....................undefined
+Then the API call get success with StatusCode 200...........................undefined
+And the "Supply" Data returned..............................................undefined
+]]></skipped>
+    </testcase>
+</testsuite>

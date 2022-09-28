@@ -1,0 +1,193 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 25,
+        "name": "Verify Add operation on ForecastFE page.",
+        "description": "",
+        "id": "forecast-fe-operations-testing.;verify-add-operation-on-forecastfe-page.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "Forecast data to Add",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "item",
+                  "loc",
+                  "date",
+                  "quantity"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user calls \"AddFcstAPI\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "the API call get success with \"Status\" 200",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Search with parameters \"261720000\" \"10800\" \"I1\" \"\u003clocation\u003e\"",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "user calls \"GetFcstAPI\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "Forecast Data returned",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "item",
+                  "loc",
+                  "date",
+                  "quantity"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "I1",
+                  "Loc1",
+                  "261720000",
+                  "10"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Forecast FE operations testing.",
+    "description": "",
+    "id": "forecast-fe-operations-testing.",
+    "keyword": "Feature",
+    "uri": "src/test/java/APITestLearn/APITestArch/Feature/ForecastFEAPITest.feature"
+  }
+]
